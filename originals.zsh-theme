@@ -73,11 +73,11 @@ function custom_git_prompt() {
 }
 
 # %B sets bold text
-PROMPT='$PROMPTCOLOR$PROMPTPREFIX %2~ $(custom_git_prompt)%{$GREEN%}%B$%{$ERROR%}%b%{$RESET%} '
+PROMPT='$PROMPTCOLOR$PROMPTPREFIX %2~ $(custom_git_prompt)%{$GREEN%}%B%{$ERROR%}%b%{$RESET%} '
 RPS1="${return_code}"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$GREEN%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$GREEN%}›%{$RESET%} "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$GREEN%} "
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$GREEN%} %{$RESET%} "
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$R%}*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
